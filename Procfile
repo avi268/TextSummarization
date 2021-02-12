@@ -1,1 +1,1 @@
-web: gunicorn app: tempapp
+web: gunicorn -b :$PORT app:textapp

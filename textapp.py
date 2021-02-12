@@ -16,4 +16,4 @@ def my_form_post():
     return render_template('my-form.html',original_text = original_text,summary_text = summary)
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=5000)
