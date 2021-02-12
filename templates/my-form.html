@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <style>
+        .container{
+            padding-top: 40px;
+        }
+
+        button{
+            align-self: center;
+        }
+    </style>
+    <title>Text Summarization</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: LightGray;">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="https://www.linkedin.com/in/avinash-gunda-450704172/">
+            <h1>Text Summarization</h1>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+        </ul>
+        <span class="navbar-text">
+          <!-- <a href=""><i class="fa fa-facebook-square" style="font-size:30px"></i></a> -->
+          <a href="https://www.linkedin.com/in/avinash-gunda-450704172/"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
+          <!-- <a href=""><i class="fa fa-twitter-square" style="font-size:30px"></i></a> -->
+        </span>
+      </nav><br> 
+
+      <p align='center'>Note: Please submit the data to get summary. Entry must be more than 30 words.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <form method="POST">
+                    <textarea name="text" id="textbox1" cols="150" rows="10" style="background-color: greenyellow;border-radius: 3px; border-style: dotted;">
+                        {{original_text}}
+                    </textarea><br>
+                    <div class="text-center">
+                        <button class="btn btn-outline-info" type="submit">Get Summary</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <form method="POST">
+                    <textarea name="text" id="textbox2" cols="150" rows="5" style="background-color: skyblue;border-radius: 3px; border-style: dotted;">{{summary_text}}</textarea>
+                </form>
+            </div>
+    
+        </div>
+    </div>
+    
+
+    
+
+</body>
+</html>
