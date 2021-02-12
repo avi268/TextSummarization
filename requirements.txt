@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 Flask==1.1.2
 Flask-Compress==1.5.0
+=======
+Flask==1.1.2
+Flask-Compress==1.5.0
+>>>>>>> ddd6527 (initial commit)
 gensim==3.8.3
